@@ -6,7 +6,7 @@
 
 equals 是根类 Object 中的一个方法。源码如下：
 
-```
+```java
 public boolean equals(Object obj) {
     return (this == obj);
 }
@@ -14,7 +14,7 @@ public boolean equals(Object obj) {
 
 可以看出，当参数 obj 引用的对象与当前对象为同一个对象（同一个地址）时，就返回 true ，否则返回 false 。所以，一般来说， equals 方法都需要我们去重写。
 
-```
+```java
 public class EqualsTest {
 	public static void main(String[] args) {
 		Object obj1 = new Object();
@@ -30,7 +30,7 @@ public class EqualsTest {
 
 输出结果：
 
-```
+```java
 obj1 和 obj2 使用 equals 比较，返回false
 obj3 和 obj4 使用 equals 比较，返回true
 ```
@@ -39,7 +39,7 @@ obj3 和 obj4 使用 equals 比较，返回true
 
 源码如下：
 
-```
+```java
 public boolean equals(Object anObject) {
         if (this == anObject) {
             return true;
@@ -69,7 +69,7 @@ public boolean equals(Object anObject) {
 
 2. 如果引用对象不相同， equals 一个一个去比较两个字符串对象里面的字符，只有完全相同，才会返回 true ，否则返回 false 。
 
-   ```
+   ```java
    public class StringEqualsTest {
    	public static void main(String[] args) {
    		String str1 = new String("str");
@@ -83,7 +83,7 @@ public boolean equals(Object anObject) {
 
    输出结果：
 
-   ```
+   ```java
    str1 和 str2 使用 equals 比较，返回true
    str1 和 str3 使用 equals 比较，返回true
    ```
@@ -96,7 +96,7 @@ JDK 中有许多类都已经重写好 equals 方法，例如 Integer 类等等�
 
 ###对于基本类型来说，就是单纯地比较的是两个值是否相同
 
-```
+```java
 public class CompareTest {
 	public static void main(String[] args) {
 		int a = 1;
@@ -110,7 +110,7 @@ public class CompareTest {
 
 输出结果：
 
-```
+```java
 a 和 b 使用 == 比较，返回true
 a 和 c 使用 == 比较，返回false
 ```
@@ -119,7 +119,7 @@ a 和 c 使用 == 比较，返回false
 
 这点跟在 Object 中的 equals 方法作用是相同的。
 
-```
+```java
 public class CompareTest {
 	public static void main(String[] args) {
 		Object obj1 = new Object();
@@ -135,7 +135,7 @@ public class CompareTest {
 
 输出结果：
 
-```
+```java
 obj1 和 obj2 使用 == 比较，返回false
 obj3 和 obj4 使用 == 比较，返回true
 ```
@@ -144,7 +144,7 @@ obj3 和 obj4 使用 == 比较，返回true
 
 两者的基本功能都讲清楚后，用经典的 String 类来举个例子，也是很多人头晕的地方。
 
-```
+```java
 public class StringTest {
 	public static void main(String[] args) {
 		String str1 = new String("str");
@@ -160,7 +160,7 @@ public class StringTest {
 
 输出结果：
 
-```
+```java
 str1 和 str2 使用 equals 比较，返回true
 str1 和 str3 使用 equals 比较，返回true
 str1 和 str2 使用 == 比较，返回false

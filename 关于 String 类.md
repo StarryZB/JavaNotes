@@ -2,7 +2,7 @@
 
 ## String 直接赋值和 new String 的区别
 
-```
+```java
 String str1 = "str";
 String str2 = new String("str");
 ```
@@ -18,7 +18,7 @@ String str2 = new String("str");
 
 ## 字符串相加问题
 
-```
+```java
 public class StringTest {
 	public static void main(String[] args) {
 		String str1 = "string";
@@ -36,7 +36,7 @@ public class StringTest {
 
 输出结果：
 
-```
+```java
 str1 和 str4 使用 == 比较，返回true
 str1 和 str5 使用 == 比较，返回false
 str1 和 str6 使用 == 比较，返回false
@@ -52,7 +52,7 @@ JDK7 之后，常量池发生了许多改变，很多都和之前的 JDK6 不一
 
 源代码
 
-```
+```java
 /** 
  * Returns a canonical representation for the string object. 
  * <p> 
@@ -89,7 +89,7 @@ public native String intern();
 
 代码一：
 
-```
+```java
 public static void main(String[] args) {
     String s = new String("1");
     s.intern();
@@ -105,7 +105,7 @@ public static void main(String[] args) {
 
 输出结果：
 
-```
+```java
 false true
 ```
 
@@ -123,7 +123,7 @@ false true
 
 代码二：
 
-```
+```java
 public static void main(String[] args) {
     String s = new String("1");
     String s2 = "1";
@@ -139,7 +139,7 @@ public static void main(String[] args) {
 
 输出结果：
 
-```
+```java
 false false
 ```
 

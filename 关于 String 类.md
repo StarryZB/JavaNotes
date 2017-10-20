@@ -36,7 +36,7 @@ public class StringTest {
 
 输出结果：
 
-```java
+```
 str1 和 str4 使用 == 比较，返回true
 str1 和 str5 使用 == 比较，返回false
 str1 和 str6 使用 == 比较，返回false
@@ -105,7 +105,7 @@ public static void main(String[] args) {
 
 输出结果：
 
-```java
+```
 false true
 ```
 
@@ -139,7 +139,7 @@ public static void main(String[] args) {
 
 输出结果：
 
-```java
+```
 false false
 ```
 

@@ -30,7 +30,7 @@ public class EqualsTest {
 
 输出结果：
 
-```java
+```
 obj1 和 obj2 使用 equals 比较，返回false
 obj3 和 obj4 使用 equals 比较，返回true
 ```
@@ -83,7 +83,7 @@ public boolean equals(Object anObject) {
 
    输出结果：
 
-   ```java
+   ```
    str1 和 str2 使用 equals 比较，返回true
    str1 和 str3 使用 equals 比较，返回true
    ```
@@ -110,7 +110,7 @@ public class CompareTest {
 
 输出结果：
 
-```java
+```
 a 和 b 使用 == 比较，返回true
 a 和 c 使用 == 比较，返回false
 ```
@@ -135,7 +135,7 @@ public class CompareTest {
 
 输出结果：
 
-```java
+```
 obj1 和 obj2 使用 == 比较，返回false
 obj3 和 obj4 使用 == 比较，返回true
 ```
@@ -160,7 +160,7 @@ public class StringTest {
 
 输出结果：
 
-```java
+```
 str1 和 str2 使用 equals 比较，返回true
 str1 和 str3 使用 equals 比较，返回true
 str1 和 str2 使用 == 比较，返回false

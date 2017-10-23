@@ -76,7 +76,7 @@ ResultSet提供检索不同类型字段的方法，常用的有：
 
 ##使用 JDBC 的步骤
 
-　　加载 JDBC 驱动程序 → 建立数据库连接 Connection → 创建执行 SQL 的语句Statement → 处理执行结果 ResultSet → 释放资源
+加载 JDBC 驱动程序 → 建立数据库连接 Connection → 创建执行 SQL 的语句Statement → 处理执行结果 ResultSet → 释放资源
 
 1. 注册驱动 (只做一次)
 
@@ -115,7 +115,7 @@ ps.executeQuery();
 //PreparedStatement 有效的防止sql注入(SQL语句在程序运行前已经进行了预编译,当运行时动态地把参数传给PreprareStatement时，即使参数里有敏感字符如 or '1=1'也数据库会作为一个参数一个字段的属性值来处理而不会作为一个SQL指令
 ```
 
-3. 处理执行结果 ResultSet
+4. 处理执行结果 ResultSet
 
 ```java
 While(rs.next()){  
@@ -124,7 +124,7 @@ While(rs.next()){
 }
 ```
 
-3. 释放资源
+5. 释放资源
 
 ```java
 //都要加try catch 以防前面关闭出错，后面的就不执行了

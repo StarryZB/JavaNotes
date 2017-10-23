@@ -74,7 +74,7 @@ ResultSet提供检索不同类型字段的方法，常用的有：
 
 使用后依次关闭对象及连接：ResultSet → Statement → Connection
 
-##使用 JDBC 的步骤
+## 使用 JDBC 的步骤
 
 加载 JDBC 驱动程序 → 建立数据库连接 Connection → 创建执行 SQL 的语句Statement → 处理执行结果 ResultSet → 释放资源
 

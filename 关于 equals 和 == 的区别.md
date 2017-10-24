@@ -2,7 +2,7 @@
 
 ## 关于 equals  
 
-###Object 中的 equals 是比较是否相等，也就是比较对象的地址是否相同
+### Object 中的 equals 是比较是否相等，也就是比较对象的地址是否相同
 
 equals 是根类 Object 中的一个方法。源码如下：
 
@@ -94,7 +94,7 @@ JDK 中有许多类都已经重写好 equals 方法，例如 Integer 类等等�
 
 在Java里，除了 boolean , byte , char , short , int , long , float , double 这8种基本类型外，其它类型都是引用类型。引用类型的值是指向对象的引用。
 
-###对于基本类型来说，就是单纯地比较的是两个值是否相同
+### 对于基本类型来说，就是单纯地比较的是两个值是否相同
 
 ```java
 public class CompareTest {
